@@ -1,5 +1,5 @@
 {
-  "name": "env-credential",
+  "name": "git-credential-env",
   "version": "0.3.0",
   "description": "",
   "keywords": [],
@@ -7,11 +7,11 @@
     "Ryan Tsao <ryan.j.tsao@gmail.com>",
     "Scott Hardy <scott.the.hardy@gmail.com>"
   ],
-  "repository": "git@github.com:L33T-KR3W/env-credential.git",
-  "homepage": "https://github.com/L33T-KR3W/env-credential",
-  "bugs": "https://github.com/L33T-KR3W/env-credential/issues",
+  "repository": "git@github.com:L33T-KR3W/git-credential-env.git",
+  "homepage": "https://github.com/L33T-KR3W/git-credential-env",
+  "bugs": "https://github.com/L33T-KR3W/git-credential-env/issues",
   "main": "index.js",
-  "bin": "bin/env-credential.js",
+  "bin": "git-credential-env",
   "scripts": {
     "test": "node test/index.js"
   },
