@@ -44,7 +44,7 @@ If `username` and/or `password` is not specified, each will be returned as nothi
 ```bash
 npm install git-credential-env -g
 GIT_USER=foo
-git config --global credential.helper "env --user=GIT_USER"
+git config --global credential.helper "env --username=GIT_USER"
 ```
 
 The git username will be `foo` and the password will be unset, i.e. `git-credential-env` will return:
@@ -59,7 +59,7 @@ However, if `username` and/or `password` is specified but not defined as an envi
 ```bash
 npm install git-credential-env -g
 GIT_USER=foo
-git-credential-env --user=SOME_UNSET_ENVIRONMENT_VAR
+git-credential-env --username=SOME_UNSET_ENVIRONMENT_VAR
 echo $?
 ```
 
