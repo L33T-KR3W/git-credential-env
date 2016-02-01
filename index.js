@@ -1,6 +1,9 @@
 module.exports = envCredential;
 
 function envCredential(opts) {
+  // only respond to get actions
+  if (!opts._.length || opts._[0].toLowerCase() !== 'get') process.exit(1);
+
   var username = opts.username ? process.env[opts.username] : '';
   var password = opts.password ? process.env[opts.password] : '';
 
