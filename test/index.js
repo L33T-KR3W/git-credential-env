@@ -45,6 +45,12 @@ test('test success if username and password specified', function (t) {
   t.end();
 });
 
+test('test success if username and password specified with alias', function (t) {
+  var cmd = ENV_VARS + './helper.js get -u=GIT_AUTH_USERNAME -p=GIT_AUTH_PASSWORD';
+  t.equal(execSyncToString(cmd), 'username=yolo\npassword=swag\n');
+  t.end();
+});
+
 test('test success if username and password specified (reversed order)', function (t) {
   var cmd = ENV_VARS + './helper.js get --password=GIT_AUTH_PASSWORD --username=GIT_AUTH_USERNAME';
   t.equal(execSyncToString(cmd), 'username=yolo\npassword=swag\n');

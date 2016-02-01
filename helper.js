@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 
-var opts = require('minimist')(process.argv.slice(2));
+var opts = require('minimist')(process.argv.slice(2), {
+  alias: {u: 'username', p: 'password'}
+});
+
 envCredential(opts);
 
 function envCredential(opts) {
