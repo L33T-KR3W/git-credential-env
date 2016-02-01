@@ -11,7 +11,10 @@
   "homepage": "https://github.com/L33T-KR3W/env-credential",
   "bugs": "https://github.com/L33T-KR3W/env-credential/issues",
   "main": "index.js",
-  "bin": "bin/env-credential.js",
+  "bin": {
+    "env-credential": "bin/env-credential.js",
+    "git-credential-env-credential": "bin/env-credential.js"
+  },
   "scripts": {
     "test": "node test/index.js"
   },
