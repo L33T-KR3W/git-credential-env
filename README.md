@@ -1,20 +1,16 @@
 # env-credential
 
+A git credential helper for setting git credentials from environment variables
 
-## Installation
-
+## usage
 ```bash
 npm install env-credential
 ```
 
-
-## Usage
-
 ```bash
-GIT_USERNAME=yolo
-GIT_PASSWORD=swag
-env-credential --username=GIT_USERNAME --password=GIT_PASSWORD
-# output:
-# username=yolo
-# password=swag
+SOME_ENV_VAR=foo
+ANOTHER_ENV_VAR=bar
+git config --global credential.helper "$PWD/node_modules/.bin/env-credential --username=SOME_ENV_VAR --password=ANOTHER_ENV_VAR"
 ```
+
+The git username will be `foo` and the password will be `bar`.
