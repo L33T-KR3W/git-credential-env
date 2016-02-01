@@ -7,7 +7,7 @@ A git credential helper for setting git credentials from environment variables. 
 
 
 ## quick example
-##### global install
+#### global install
 ```bash
 npm install git-credential-env -g
 GIT_USER=foo
@@ -22,7 +22,7 @@ username=foo
 password=bar
 ```
 
-##### local install (recommended)
+#### local install (recommended)
 ```bash
 npm install git-credential-env
 GIT_USER=foo
@@ -39,7 +39,7 @@ password=bar
 
 Note that the above example uses the flag aliases `-u` for `--user` and `-p` for `--pass`;
 
-##### arguments are optional
+#### arguments are optional
 If `username` and/or `password` is not specified, each will be returned as nothing:
 ```bash
 npm install git-credential-env -g
