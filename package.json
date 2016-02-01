@@ -10,8 +10,8 @@
   "repository": "git@github.com:L33T-KR3W/git-credential-env.git",
   "homepage": "https://github.com/L33T-KR3W/git-credential-env",
   "bugs": "https://github.com/L33T-KR3W/git-credential-env/issues",
-  "main": "index.js",
-  "bin": "git-credential-env",
+  "main": "helper.js",
+  "bin": "helper.js",
   "scripts": {
     "test": "node test/index.js"
   },
