@@ -29,13 +29,11 @@ You can read more about git credential helpers here: http://git-scm.com/book/en/
 
 ## usage
 ```
-Usage: git-credential-env {OPTIONS}
+Usage: git-credential-env get {OPTIONS}
 
 Options:
 
---username
-the name of environment variable containing the git username
+  --username, -u The name of environment variable containing the git username
 
---password
-the name of environment variable containing the git password
+  --password, -p The name of environment variable containing the git password
 ```
