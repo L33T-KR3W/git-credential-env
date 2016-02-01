@@ -1,7 +1,7 @@
 {
   "name": "git-credential-env",
   "version": "0.3.0",
-  "description": "",
+  "description": "A git credential helper for setting git credentials from environment variables",
   "keywords": [],
   "contributors": [
     "Ryan Tsao <ryan.j.tsao@gmail.com>",
