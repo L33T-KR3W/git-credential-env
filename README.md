@@ -9,17 +9,17 @@ A git credential helper for setting git credentials from environment variables. 
 #### local install
 ```bash
 npm install git-credential-env
-SOME_ENV_VAR=foo
-ANOTHER_ENV_VAR=bar
-git config --global credential.helper "$PWD/node_modules/.bin/git-credential-env -u=SOME_ENV_VAR -p=ANOTHER_ENV_VAR"
+GIT_USER=foo
+GIT_PASS=bar
+git config --global credential.helper "$PWD/node_modules/.bin/git-credential-env -u=GIT_USER -p=GIT_PASS"
 ```
 
 #### global install
 ```bash
 npm install git-credential-env -g
-SOME_ENV_VAR=foo
-ANOTHER_ENV_VAR=bar
-git config --global credential.helper "env --username=SOME_ENV_VAR --password=ANOTHER_ENV_VAR"
+GIT_USER=foo
+GIT_PASS=bar
+git config --global credential.helper "env --username=GIT_USER --password=GIT_PASS"
 ```
 
 The git username will be `foo` and the password will be `bar`, i.e. git-credential-env will return:
