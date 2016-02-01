@@ -1,4 +1,7 @@
-module.exports = envCredential;
+#!/usr/bin/env node
+
+var opts = require('minimist')(process.argv.slice(2));
+envCredential(opts);
 
 function envCredential(opts) {
   // only respond to get actions
