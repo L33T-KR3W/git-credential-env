@@ -1,5 +1,6 @@
 # git-credential-env
 
+[![Version][version-badge]][version-href]
 [![Build status][build-badge]][build-href]
 
 
@@ -82,6 +83,8 @@ Options:
 ```
 
 
+[version-badge]: https://img.shields.io/npm/v/git-credential-env.svg
+[version-href]: https://www.npmjs.com/package/git-credential-env
 
 [build-badge]: https://travis-ci.org/L33T-KR3W/git-credential-env.svg
 [build-href]: https://travis-ci.org/L33T-KR3W/git-credential-env
