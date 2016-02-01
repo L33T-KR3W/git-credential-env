@@ -1,5 +1,8 @@
 # git-credential-env
 
+[![Build status][build-badge]][build-href]
+
+
 A git credential helper for setting git credentials from environment variables. Useful for CI deployments with Travis.
 
 ## quick example
@@ -38,3 +41,8 @@ Options:
 
   --password, -p The name of environment variable containing the git password
 ```
+
+
+
+[build-badge]: https://travis-ci.org/L33T-KR3W/git-credential-env.svg
+[build-href]: https://travis-ci.org/L33T-KR3W/git-credential-env
