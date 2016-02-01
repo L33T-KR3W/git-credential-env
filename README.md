@@ -2,15 +2,16 @@
 
 A git credential helper for setting git credentials from environment variables. Useful for CI deployments with Travis.
 
-## quick example (local install)
+## quick example
+#### local install
 ```bash
 npm install git-credential-env
 SOME_ENV_VAR=foo
 ANOTHER_ENV_VAR=bar
-git config --global credential.helper "$PWD/node_modules/.bin/git-credential-env --username=SOME_ENV_VAR --password=ANOTHER_ENV_VAR"
+git config --global credential.helper "$PWD/node_modules/.bin/git-credential-env -u=SOME_ENV_VAR -p=ANOTHER_ENV_VAR"
 ```
 
-## quick example (global install)
+#### global install
 ```bash
 npm install git-credential-env -g
 SOME_ENV_VAR=foo
