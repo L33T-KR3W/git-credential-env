@@ -55,12 +55,12 @@ username=foo
 password=
 ```
 
-However, if `username` and/or `password` is specified but not defined as an environment variable, `git-credential-env` will exit with status code 1:
+However, if `username` and/or `password` is specified but not defined as an environment variable, `git-credential-env` will exit with status code 1 without writing anything to stdout:
 
 ```bash
 npm install git-credential-env -g
 GIT_USER=foo
-git-credential-env --username=SOME_UNSET_ENVIRONMENT_VAR
+git-credential-env get --username=SOME_UNSET_ENVIRONMENT_VAR
 echo $?
 ```
 
