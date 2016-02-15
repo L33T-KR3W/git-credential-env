@@ -2,6 +2,7 @@
 
 [![Version][version-badge]][version-href]
 [![Build status][build-badge]][build-href]
+[![Stability][stability-badge]][stability-href]
 
 
 A Git credential helper for setting Git credentials from environment variables. Useful for CI deployments with [Travis CI](https://travis-ci.org), [CircleCI](https://circleci.com), and others.
@@ -49,3 +50,6 @@ See the [Wiki](https://github.com/L33T-KR3W/git-credential-env/wiki) for full do
 
 [build-badge]: https://travis-ci.org/L33T-KR3W/git-credential-env.svg
 [build-href]: https://travis-ci.org/L33T-KR3W/git-credential-env
+
+[stability-badge]: https://img.shields.io/badge/stability-locked-blue.svg
+[stability-href]: https://nodejs.org/api/documentation.html#documentation_stability_index
