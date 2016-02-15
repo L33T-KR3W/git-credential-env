@@ -25,7 +25,7 @@ GIT_PASS=bar
 git config credential.helper "$PWD/node_modules/.bin/git-credential-env --username=GIT_USER --password=GIT_PASS"
 ```
 
-In both examples, the Git credential username will be `foo` and the password will be `bar`.
+In both examples, the username `foo` and password `bar` will be provided as credentials when requested by Git.
 
 
 ## Usage
