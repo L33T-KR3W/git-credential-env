@@ -2,7 +2,13 @@
   "name": "git-credential-env",
   "version": "0.4.0",
   "description": "A git credential helper for setting git credentials from environment variables",
-  "keywords": [],
+  "keywords": [
+    "git",
+    "config",
+    "credential",
+    "helper",
+    "environment"
+  ],
   "contributors": [
     "Ryan Tsao <ryan.j.tsao@gmail.com>",
     "Scott Hardy <scott.the.hardy@gmail.com>"
@@ -16,10 +22,10 @@
     "test": "node test/index.js"
   },
   "dependencies": {
-    "minimist": "^1.2.0"
+    "minimist": "1.2.0"
   },
   "devDependencies": {
-    "tape": "^4.4.0"
+    "tape": "4.4.0"
   },
   "license": "MIT"
 }

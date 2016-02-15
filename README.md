@@ -4,83 +4,44 @@
 [![Build status][build-badge]][build-href]
 
 
-A git credential helper for setting git credentials from environment variables. Useful for CI deployments with Travis.
+A Git credential helper for setting Git credentials from environment variables. Useful for CI deployments with [Travis CI](https://travis-ci.org), [CircleCI](https://circleci.com), and others.
 
 
-## quick example
-#### global install
+## Quick Example
+
+**Global Installation**
 ```bash
-npm install git-credential-env -g
+npm install -g git-credential-env
 GIT_USER=foo
 GIT_PASS=bar
-git config --global credential.helper "env --username=GIT_USER --password=GIT_PASS"
+git config credential.helper "env --username=GIT_USER --password=GIT_PASS"
 ```
 
-The git username will be `foo` and the password will be `bar`, i.e. `git-credential-env` will return:
-
-```
-username=foo
-password=bar
-```
-
-#### local install (recommended)
+**Local Installation** *(recommended)*
 ```bash
 npm install git-credential-env
 GIT_USER=foo
 GIT_PASS=bar
-git config --global credential.helper "$PWD/node_modules/.bin/git-credential-env -u=GIT_USER -p=GIT_PASS"
+git config credential.helper "$PWD/node_modules/.bin/git-credential-env --username=GIT_USER --password=GIT_PASS"
 ```
 
-The git username will be `foo` and the password will be `bar`, i.e. `git-credential-env` will return:
-
-```
-username=foo
-password=bar
-```
-
-Note that the above example uses the flag aliases `-u` for `--user` and `-p` for `--pass`;
-
-#### arguments are optional
-If `username` and/or `password` is not specified, each will be returned as nothing:
-```bash
-npm install git-credential-env -g
-GIT_USER=foo
-git config --global credential.helper "env --username=GIT_USER"
-```
-
-The git username will be `foo` and the password will be unset, i.e. `git-credential-env` will return:
-
-```
-username=foo
-password=
-```
-
-However, if `username` and/or `password` is specified but not defined as an environment variable, `git-credential-env` will exit with status code 1 without writing anything to stdout:
-
-```bash
-npm install git-credential-env -g
-GIT_USER=foo
-git-credential-env get --username=SOME_UNSET_ENVIRONMENT_VAR
-echo $?
-```
-
-outputs:
-
-```
-1
-```
+In both examples, the Git credential username will be `foo` and the password will be `bar`.
 
 
-## usage
+## Usage
 ```bash
 Usage: git-credential-env get {OPTIONS}
 
 Options:
 
-  --username, -u The name of environment variable containing the git username
+  --username, -u  The name of environment variable containing the Git username
 
-  --password, -p The name of environment variable containing the git password
+  --password, -p  The name of environment variable containing the Git password
 ```
+
+
+## Documentation
+See the [Wiki](https://github.com/L33T-KR3W/git-credential-env/wiki) for full documentation.
 
 
 [version-badge]: https://img.shields.io/npm/v/git-credential-env.svg
