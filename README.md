@@ -4,7 +4,7 @@
 [![Build status][build-badge]][build-href]
 
 
-A small Git credential helper for setting Git credentials from environment variables. Useful for CI deployments with [Travis](https://travis-ci.org), [CircleCI](https://circleci.com), and others.
+A Git credential helper for setting Git credentials from environment variables. Useful for CI deployments with [Travis CI](https://travis-ci.org), [CircleCI](https://circleci.com), and others.
 
 
 ## quick example
