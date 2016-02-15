@@ -44,6 +44,10 @@ Options:
 ```
 
 
+## documentation
+See the [Wiki](https://github.com/L33T-KR3W/git-credential-env/wiki) for full documentation.
+
+
 [version-badge]: https://img.shields.io/npm/v/git-credential-env.svg
 [version-href]: https://www.npmjs.com/package/git-credential-env
 
